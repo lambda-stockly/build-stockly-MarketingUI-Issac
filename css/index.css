@@ -126,3 +126,64 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url(https://fonts.gstatic.com/s/merriweathersans/v10/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v20/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+:root {
+  font-size: 67.5%;
+}
+@media (min-width: 767px) {
+  :root {
+    font-size: 67.5%;
+  }
+}
+html,
+body,
+a {
+  font-family: 'Merriweather Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
