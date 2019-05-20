@@ -195,17 +195,13 @@ h5 {
 a {
   text-decoration: none;
 }
-body {
-  height: 2000px;
-  background: #F9F9F9;
-}
 .nav-wrapper {
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
 }
 .nav {
-  max-width: 1400px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .nav .logo {
@@ -288,13 +284,12 @@ body {
 }
 .header-wrapper header {
   margin: 0 auto;
-  padding: 4rem 1.6rem;
-  max-width: 1400px;
+  padding: 8rem 1.6rem;
+  max-width: 1280px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
 }
 .header-wrapper header .right-hero {
   display: none;
@@ -321,13 +316,72 @@ body {
     align-items: center;
   }
   .header-wrapper header .left-hero {
-    border: 1px solid blue;
+    padding-left: 5%;
     width: 50%;
-    padding-right: 10%;
+    padding-right: 5%;
   }
   .header-wrapper header .right-hero {
-    border: 1px solid red;
     width: 50%;
     display: block;
+    padding-left: 5%;
+    padding-right: 5%;
   }
+}
+.main-wrapper {
+  width: 100%;
+  background-color: #0D122B;
+}
+.main-wrapper main {
+  max-width: 1280px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 8rem 1.6rem;
+  text-align: center;
+}
+.main-wrapper main h2,
+.main-wrapper main h4 {
+  color: #FFFFFF;
+}
+.main-wrapper main h4 {
+  cursor: pointer;
+}
+.main-wrapper main p {
+  color: #F9F9F9;
+}
+.main-wrapper main h2 {
+  margin-bottom: 2.4rem;
+}
+.main-wrapper main p {
+  margin-bottom: 4.8rem;
+}
+.main-wrapper main .features li {
+  display: inline-block;
+}
+.main-wrapper main .image-carousel div {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 6px;
+}
+.main-wrapper main .image-carousel img {
+  margin: 0 auto;
+  width: inherit;
+  max-width: 800px;
+  border-radius: inherit;
+  display: none;
+}
+.main-wrapper main .image-carousel img.active-photo {
+  display: block;
+}
+.main-wrapper main ul {
+  margin-bottom: 4.4rem;
+  border-bottom: 1px solid #F9F9F9;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-wrapper main ul li {
+  padding-bottom: 1.6rem;
+}
+.main-wrapper main ul .active-link {
+  border-bottom: 4px solid #5AE5DD;
 }

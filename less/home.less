@@ -5,15 +5,13 @@
 
 .header-wrapper header {
     margin: 0 auto;
-    padding: 4.0rem 1.6rem;
-    max-width: 1400px;
+    padding: 8.0rem 1.6rem;
+    max-width: 1280px;
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    border: 1px solid red;
 
     .right-hero {
         display: none;
@@ -47,15 +45,88 @@
         align-items: center;
 
         .left-hero {
-            border: 1px solid blue;
+            padding-left: 5%;
             width: 50%;
-            padding-right: 10%;
+            padding-right: 5%;
         }
 
         .right-hero {
-            border: 1px solid red;
             width: 50%;
             display: block;
+            padding-left: 5%;
+            padding-right: 5%;
         }
     }
 }
+
+.main-wrapper {
+    width: 100%;
+    background-color: @secondary-color;
+
+    main {
+        max-width: 1280px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 8.0rem 1.6rem;
+        text-align: center;
+        
+        h2, h4 {
+            color: @white;
+        }
+
+        h4 {
+            cursor: pointer;
+        }
+
+        p {
+            color: @light-grey;
+        }
+
+        h2 {
+            margin-bottom: 2.4rem;
+        }
+
+        p { 
+            margin-bottom: 4.8rem;
+        }
+
+        .features li {
+            display:inline-block;
+        }
+
+        .image-carousel div {
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .image-carousel img {
+            margin: 0 auto;
+            width: inherit;
+            max-width: 800px;
+            border-radius: inherit;
+            display: none;
+
+            &.active-photo {
+                display: block;
+            }
+        }
+
+        ul {
+            margin-bottom: 4.4rem;
+            border-bottom: 1px solid @light-grey;
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                padding-bottom: 1.6rem;
+            }
+
+            .active-link {
+                border-bottom: 4px solid @primary-color;
+            }
+        }
+    }
+}
+
