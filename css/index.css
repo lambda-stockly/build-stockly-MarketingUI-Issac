@@ -147,6 +147,12 @@ table {
   :root {
     font-size: 67.5%;
   }
+  :root h1 {
+    font-size: 4rem;
+  }
+  :root h2 {
+    font-size: 3.2rem;
+  }
 }
 html,
 body,
@@ -165,11 +171,11 @@ h6 {
   line-height: 1.5;
 }
 h1 {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: bold;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 h3 {
@@ -186,4 +192,87 @@ h5 {
 }
 a {
   text-decoration: none;
+}
+body {
+  height: 2000px;
+  background: #F9F9F9;
+}
+.nav-wrapper {
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+}
+.nav .logo {
+  margin-left: 1.6rem;
+}
+.nav .logo span {
+  color: #5AE5DD;
+}
+.nav .menu {
+  text-align: right;
+  position: absolute;
+  top: 0.8rem;
+  width: 100%;
+}
+.nav .menu ul {
+  display: none;
+  background-color: #FFFFFF;
+}
+.nav .menu ul li {
+  color: #0D122B;
+  line-height: 70px;
+  border-bottom: 2px solid #F9F9F9;
+  text-align: center;
+  display: block;
+}
+.nav .menu ul li span {
+  color: #5AE5DD;
+}
+.nav .menu label {
+  margin-right: 2.4rem;
+  font-size: 2.4rem;
+  color: #0D122B;
+  cursor: pointer;
+}
+.nav .menu #toggle {
+  display: none;
+}
+.nav .menu #toggle:checked + ul {
+  display: block;
+}
+@media (min-width: 767px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .menu {
+    position: relative;
+  }
+  .nav .menu label {
+    display: none;
+  }
+  .nav .menu ul {
+    display: inline-block;
+  }
+  .nav .menu ul li {
+    display: inline-block;
+    line-height: 0;
+    margin-right: 2.4rem;
+  }
+  .nav .menu ul li span {
+    color: #FFFFFF;
+  }
+  .nav .menu .log-in {
+    padding: 1.6rem 0;
+    width: 12rem;
+    border-radius: 0.4rem;
+    border: 1px solid #0D122B;
+  }
+  .nav .menu .sign-up {
+    padding: 1.6rem 0;
+    width: 12rem;
+    border-radius: 0.4rem;
+    background-color: #5AE5DD;
+  }
 }

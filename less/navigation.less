@@ -1,0 +1,109 @@
+
+body {
+    height: 2000px;
+    background: @light-grey;
+}
+
+.nav-wrapper {
+    background-color: @white;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    .logo {
+        margin-left: 1.6rem;
+
+        span {
+            color: @primary-color;
+        }
+    }
+    
+    // border: solid 1px red;
+
+    .menu {
+        // border: solid 1px blue;
+        text-align: right;
+        position: absolute;
+        top: 0.8rem;
+        width: 100%;
+
+        ul {
+            display: none;
+            background-color: @white;
+        }
+
+        ul li {
+            color: @secondary-color;
+            line-height: 70px;
+            border-bottom: 2px solid @light-grey;
+            text-align: center;
+            display: block;
+
+            span {
+                color: @primary-color;
+            }
+        }
+
+        label {
+            margin-right: 2.4rem;
+            font-size: 2.4rem;
+            color: @secondary-color;
+            cursor: pointer;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        #toggle:checked + ul {
+            display:block;
+        }
+ 
+    }
+
+    @media @desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+            position: relative;
+
+            label {
+                display: none;
+            }
+    
+            ul {
+                display: inline-block;
+            }
+
+            ul li {
+                display: inline-block;
+                line-height: 0;
+                margin-right: 2.4rem;
+
+                span {
+                    color: @white;
+                }
+            }
+
+            .log-in {
+                padding: 1.6rem 0;
+                width: 12.0rem;
+                border-radius: 0.4rem;
+                border: 1px solid @secondary-color;
+            }
+
+            .sign-up {
+                padding: 1.6rem 0;
+                width: 12.0rem;
+                border-radius: 0.4rem;
+                background-color: @primary-color;
+            }
+        }
+        
+    }
+}
+
+    
