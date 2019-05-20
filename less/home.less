@@ -1,0 +1,61 @@
+.header-wrapper {
+    width: 100%;
+    background-color: @white;
+}
+
+.header-wrapper header {
+    margin: 0 auto;
+    padding: 4.0rem 1.6rem;
+    max-width: 1400px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid red;
+
+    .right-hero {
+        display: none;
+        max-height: 475px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            max-height: inherit;
+            
+        }
+    }
+
+    .left-hero {
+        p {
+            margin: 2.4rem 0;
+        }
+
+        .stockexchange-img {
+            max-width: 400px;
+            width: 100%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media @desktop {
+        flex-direction: row;
+        align-items: center;
+
+        .left-hero {
+            border: 1px solid blue;
+            width: 50%;
+            padding-right: 10%;
+        }
+
+        .right-hero {
+            border: 1px solid red;
+            width: 50%;
+            display: block;
+        }
+    }
+}

@@ -160,6 +160,7 @@ a {
   font-family: 'Merriweather Sans', sans-serif;
   line-height: 1.5;
   font-size: 1.6rem;
+  color: #0D122B;
 }
 h1,
 h2,
@@ -167,6 +168,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #0D122B;
   font-family: 'Merriweather', serif;
   line-height: 1.5;
 }
@@ -201,6 +203,10 @@ body {
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
+}
+.nav {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .nav .logo {
   margin-left: 1.6rem;
@@ -274,5 +280,54 @@ body {
     width: 12rem;
     border-radius: 0.4rem;
     background-color: #5AE5DD;
+  }
+}
+.header-wrapper {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.header-wrapper header {
+  margin: 0 auto;
+  padding: 4rem 1.6rem;
+  max-width: 1400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+}
+.header-wrapper header .right-hero {
+  display: none;
+  max-height: 475px;
+  text-align: center;
+}
+.header-wrapper header .right-hero img {
+  max-width: 100%;
+  max-height: inherit;
+}
+.header-wrapper header .left-hero p {
+  margin: 2.4rem 0;
+}
+.header-wrapper header .left-hero .stockexchange-img {
+  max-width: 400px;
+  width: 100%;
+}
+.header-wrapper header .left-hero .stockexchange-img img {
+  max-width: 100%;
+}
+@media (min-width: 767px) {
+  .header-wrapper header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .header-wrapper header .left-hero {
+    border: 1px solid blue;
+    width: 50%;
+    padding-right: 10%;
+  }
+  .header-wrapper header .right-hero {
+    border: 1px solid red;
+    width: 50%;
+    display: block;
   }
 }
