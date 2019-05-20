@@ -278,13 +278,64 @@ a {
     background-color: #5AE5DD;
   }
 }
+.cta-wrapper {
+  width: 100%;
+  background-color: #E0FCF9;
+}
+.cta-wrapper .cta-section {
+  max-width: 1280px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta-wrapper .cta-section h3,
+.cta-wrapper .cta-section p {
+  margin-bottom: 2.4rem;
+}
+.cta-wrapper .cta-section ul {
+  display: flex;
+}
+.cta-wrapper .cta-section ul li {
+  display: inline-block;
+  line-height: 0;
+  margin: 0.8rem 0.8rem;
+  text-align: center;
+}
+.cta-wrapper .cta-section ul li span {
+  color: #FFFFFF;
+}
+.cta-wrapper .cta-section .log-in {
+  padding: 1.6rem 0;
+  width: 12rem;
+  border-radius: 0.4rem;
+  border: 1px solid #0D122B;
+}
+.cta-wrapper .cta-section .sign-up {
+  padding: 1.6rem 0;
+  width: 12rem;
+  border-radius: 0.4rem;
+  background-color: #5AE5DD;
+}
+@media (min-width: 767px) {
+  .cta-wrapper .cta-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .cta-wrapper .cta-section ul {
+    display: flex;
+  }
+}
 .header-wrapper {
   width: 100%;
   background-color: #FFFFFF;
 }
 .header-wrapper header {
   margin: 0 auto;
-  padding: 8rem 1.6rem;
+  padding: 4rem 1.6rem 8rem 1.6rem;
   max-width: 1280px;
   overflow: hidden;
   display: flex;
@@ -384,4 +435,47 @@ a {
 }
 .main-wrapper main ul .active-link {
   border-bottom: 4px solid #5AE5DD;
+}
+.benefits-wrapper {
+  width: 100%;
+  background-color: #F9F9F9;
+}
+.benefits-wrapper .benefits-section {
+  max-width: 1280px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 8rem 1.6rem;
+  text-align: center;
+}
+.benefits-wrapper .benefits-section h2 {
+  margin-bottom: 2.4rem;
+}
+.benefits-wrapper .benefits-section p {
+  margin-bottom: 4.8rem;
+}
+.benefits-wrapper .benefits-section h4 {
+  margin: 2.4rem 0;
+}
+.benefits-wrapper .benefits-section .benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.benefits-wrapper .benefits-section .card {
+  margin-bottom: 2.4rem;
+  background-color: #FFFFFF;
+  padding: 2.4rem;
+  margin: 2.4rem;
+  border-radius: 8px;
+  max-width: 300px;
+}
+.benefits-wrapper .benefits-section .card p {
+  margin: 0;
+}
+.benefits-wrapper .benefits-section .card .image-container {
+  margin: 0 auto;
+  max-width: 65px;
+}
+.benefits-wrapper .benefits-section .card .image-container img {
+  max-width: inherit;
 }
