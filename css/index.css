@@ -199,6 +199,7 @@ a {
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 .nav {
   max-width: 1280px;
@@ -206,6 +207,9 @@ a {
 }
 .nav .logo {
   margin-left: 1.6rem;
+  width: 150px;
+  position: relative;
+  z-index: 10;
 }
 .nav .logo span {
   color: #5AE5DD;
@@ -230,6 +234,9 @@ a {
 .nav .menu ul li span {
   color: #5AE5DD;
 }
+.nav .menu ul li .active-page {
+  color: #97A2B9;
+}
 .nav .menu label {
   margin-right: 2.4rem;
   font-size: 2.4rem;
@@ -240,6 +247,7 @@ a {
   display: none;
 }
 .nav .menu #toggle:checked + ul {
+  width: 100%;
   display: block;
 }
 @media (min-width: 767px) {
@@ -376,10 +384,10 @@ a {
   }
 }
 .header-wrapper {
-  width: 100%;
+  max-width: 100%;
   background-color: #FFFFFF;
 }
-.header-wrapper header {
+.header-wrapper .header-home {
   margin: 0 auto;
   padding: 4rem 1.6rem 8rem 1.6rem;
   max-width: 1280px;
@@ -388,36 +396,36 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.header-wrapper header .right-hero {
+.header-wrapper .header-home .right-hero {
   display: none;
   max-height: 475px;
   text-align: center;
 }
-.header-wrapper header .right-hero img {
+.header-wrapper .header-home .right-hero img {
   max-width: 100%;
   max-height: inherit;
 }
-.header-wrapper header .left-hero p {
+.header-wrapper .header-home .left-hero p {
   margin: 2.4rem 0;
 }
-.header-wrapper header .left-hero .stockexchange-img {
+.header-wrapper .header-home .left-hero .stockexchange-img {
   max-width: 400px;
   width: 100%;
 }
-.header-wrapper header .left-hero .stockexchange-img img {
+.header-wrapper .header-home .left-hero .stockexchange-img img {
   max-width: 100%;
 }
 @media (min-width: 767px) {
-  .header-wrapper header {
+  .header-wrapper .header-home {
     flex-direction: row;
     align-items: center;
   }
-  .header-wrapper header .left-hero {
+  .header-wrapper .header-home .left-hero {
     padding-left: 5%;
     width: 50%;
     padding-right: 5%;
   }
-  .header-wrapper header .right-hero {
+  .header-wrapper .header-home .right-hero {
     width: 50%;
     display: block;
     padding-left: 5%;
@@ -482,32 +490,34 @@ a {
 .main-wrapper main ul .active-link {
   border-bottom: 4px solid #5AE5DD;
 }
-.benefits-wrapper {
+.card-wrapper {
   width: 100%;
   background-color: #F9F9F9;
 }
-.benefits-wrapper .benefits-section {
+.card-wrapper .card-section {
   max-width: 1280px;
   overflow: hidden;
   margin: 0 auto;
   padding: 8rem 1.6rem;
   text-align: center;
 }
-.benefits-wrapper .benefits-section h2 {
+.card-wrapper .card-section h2 {
   margin-bottom: 2.4rem;
 }
-.benefits-wrapper .benefits-section p {
+.card-wrapper .card-section p {
   margin-bottom: 4.8rem;
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
 }
-.benefits-wrapper .benefits-section h4 {
+.card-wrapper .card-section h4 {
   margin: 2.4rem 0;
 }
-.benefits-wrapper .benefits-section .benefits-container {
+.card-wrapper .card-section .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.benefits-wrapper .benefits-section .card {
+.card-wrapper .card-section .card {
   margin-bottom: 2.4rem;
   background-color: #FFFFFF;
   padding: 2.4rem;
@@ -515,19 +525,124 @@ a {
   border-radius: 8px;
   max-width: 300px;
 }
-.benefits-wrapper .benefits-section .card a {
+.card-wrapper .card-section .card a {
   display: inline-block;
   margin-top: 1.6rem;
   text-decoration: underline;
   color: #97A2B9;
 }
-.benefits-wrapper .benefits-section .card p {
+.card-wrapper .card-section .card p {
   margin: 0;
 }
-.benefits-wrapper .benefits-section .card .image-container {
+.card-wrapper .card-section .card .image-container {
   margin: 0 auto;
   max-width: 65px;
 }
-.benefits-wrapper .benefits-section .card .image-container img {
+.card-wrapper .card-section .card .image-container img {
   max-width: inherit;
+}
+.header-wrapper .header-about {
+  margin: 0 auto;
+  padding: 4rem 1.6rem 8rem 1.6rem;
+  max-width: 1280px;
+  overflow: hidden;
+}
+.header-wrapper .header-about h2,
+.header-wrapper .header-about p {
+  text-align: center;
+}
+.header-wrapper .header-about h2 {
+  margin-bottom: 2.4rem;
+}
+.header-wrapper .header-about p {
+  margin-bottom: 4.8rem;
+}
+.header-wrapper .header-about .checkmark {
+  background: #5AE5DD;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 30px;
+  position: relative;
+  top: -50px;
+  left: 125px;
+}
+.header-wrapper .header-about .checkmark p.check {
+  padding-top: 0.6rem;
+  color: #FFFFFF;
+  font-size: 2.4rem;
+}
+.header-wrapper .header-about .values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.header-wrapper .header-about .values-container .card {
+  padding: 2.4rem;
+  margin: 2.4rem;
+  max-width: 300px;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.header-wrapper .header-about .values-container .value-image {
+  margin: 0 auto;
+  margin-top: -30px;
+  max-width: 270px;
+}
+.header-wrapper .header-about .values-container .value-image img {
+  max-width: 270px;
+}
+.header-wrapper .header-about .values-container h4 {
+  text-align: center;
+  margin: 1.6rem 0;
+}
+.header-wrapper .header-about .values-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.dark-section-wrapper {
+  width: 100%;
+  background-color: #0D122B;
+}
+.dark-section-wrapper .operations-wrapper {
+  margin: 0 auto;
+  padding: 6rem 1.6rem;
+  max-width: 1280px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dark-section-wrapper .operations-wrapper .card {
+  background-color: #FFFFFF;
+  padding: 2.4rem 1.2rem;
+  margin: 2.4rem 0.8rem;
+  border-radius: 8px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.dark-section-wrapper .operations-wrapper .card .operations-image {
+  max-width: 65px;
+  margin-right: 1.2rem;
+}
+.dark-section-wrapper .operations-wrapper .card .operations-image img {
+  max-width: 65px;
+}
+.dark-section-wrapper .operations-wrapper .card .operations-text h3 {
+  margin-bottom: 0.8rem;
+}
+@media (min-width: 767px) {
+  .dark-section-wrapper .operations-wrapper .card {
+    margin: 2.4rem;
+  }
+  .dark-section-wrapper .operations-wrapper .card .operations-image {
+    margin-left: 2.4rem;
+  }
+  .dark-section-wrapper .operations-wrapper .card .operations-text {
+    margin-left: 1.6rem;
+  }
 }

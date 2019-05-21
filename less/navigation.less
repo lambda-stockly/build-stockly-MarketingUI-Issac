@@ -3,6 +3,7 @@
     background-color: @white;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .nav {
@@ -11,6 +12,9 @@
 
     .logo {
         margin-left: 1.6rem;
+        width: 150px;
+        position: relative;
+        z-index: 10;
 
         span {
             color: @primary-color;
@@ -41,6 +45,10 @@
             span {
                 color: @primary-color;
             }
+
+            .active-page {
+                color: @faded-secondary-color;
+            }
         }
 
         label {
@@ -55,6 +63,7 @@
         }
 
         #toggle:checked + ul {
+            width: 100%;
             display:block;
         }
  
@@ -84,6 +93,7 @@
                 span {
                     color: @white;
                 }
+
             }
 
             .log-in {
