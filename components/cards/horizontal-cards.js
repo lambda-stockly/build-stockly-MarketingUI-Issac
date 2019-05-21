@@ -18,7 +18,6 @@ class HorizontalCardGenerator {
 
         this.constructImage();
         this.constructText();
-        console.log(this.linkContainer);
     }
 
     constructImage() {
