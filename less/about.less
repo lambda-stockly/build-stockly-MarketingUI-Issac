@@ -1,0 +1,128 @@
+
+.header-wrapper .header-about {
+    margin: 0 auto;
+    padding: 4.0rem 1.6rem 8.0rem 1.6rem;
+    max-width: 1280px;
+    overflow: hidden;
+
+    h2, p {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 2.4rem;
+    }
+
+    p {
+        margin-bottom: 4.8rem;
+    }
+
+    .checkmark {
+        background: @primary-color;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 30px;
+        position: relative;
+        top: -50px;
+        left: 125px;
+
+        p.check {
+            padding-top: 0.6rem;
+            color: @white;
+            font-size: 2.4rem;
+        }
+    }
+
+    .values-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            padding: 2.4rem;
+            margin: 2.4rem;
+            max-width: 300px;
+
+            -webkit-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.15);
+            -moz-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.15);
+            box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.15);
+            border-radius: 4px;
+        }
+
+        .value-image {
+            margin: 0 auto;
+            margin-top: -30px;
+
+            max-width: 270px;
+
+            img {
+                max-width: 270px;
+            }
+        }
+
+        h4 {
+            text-align: center;
+            margin: 1.6rem 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+}
+
+.dark-section-wrapper {
+    width: 100%;
+    background-color: @secondary-color;
+}
+
+.dark-section-wrapper .operations-wrapper {
+    margin: 0 auto;
+    padding: 6.0rem 1.6rem;
+    max-width: 1280px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+        background-color: @white;
+        padding: 2.4rem 1.2rem;
+        margin: 2.4rem 0.8rem;
+        border-radius: 8px;
+        max-width: 500px;
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+
+        .operations-image {
+            max-width: 65px;
+            margin-right: 1.2rem;
+
+            img {
+                max-width: 65px;
+            }
+        }
+
+        .operations-text h3 {
+            margin-bottom: 0.8rem;
+        }
+
+        @media @desktop {
+            margin: 2.4rem;
+
+            .operations-image {
+                margin-left: 2.4rem;
+            }
+
+            .operations-text {
+                margin-left: 1.6rem;
+            }
+        }
+    }
+}

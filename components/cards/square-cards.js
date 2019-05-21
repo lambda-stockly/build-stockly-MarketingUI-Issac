@@ -47,7 +47,7 @@ class SquareCardGenerator {
     }
 
     constructLink() {
-        if(this.linkText) {
+        if (this.linkText) {
             const link = document.createElement('a');
             link.textContent = this.linkText;
             link.href = this.linkLocation;
@@ -56,51 +56,151 @@ class SquareCardGenerator {
     }
 }
 
-const benefitsCard = [
-    {
-        imgSrc: 'img/benefits/user-accounts.png',
-        title: 'User Accounts',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-        imgSrc: 'img/benefits/stock_summaries.png',
-        title: 'Stock Summaries',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-        imgSrc: 'img/benefits/stock-charts.png',
-        title: 'Stock Charts',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-        imgSrc: 'img/benefits/stock-thresholds.png',
-        title: 'Stock Thresholds',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-        imgSrc: 'img/benefits/leaderboard-page.png',
-        title: 'Leaderboard Page',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-        imgSrc: 'img/benefits/sentiment-analysis.png',
-        title: 'Sentiment Analysis',
-        subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    // {
-    //     imgSrc: 'img/benefits/user-accounts.png',
-    //     title: 'User Accounts',
-    //     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    //     linkText: '',
-    //     linkLocation: '',
-    // },  
-]
+if (document.title == 'Σtockly') {
 
-const benefitsContainer = document.querySelector('.benefits-container');
+    const benefitsCard = [
+        {
+            imgSrc: 'img/benefits/user-accounts.png',
+            title: 'User Accounts',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            imgSrc: 'img/benefits/stock_summaries.png',
+            title: 'Stock Summaries',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            imgSrc: 'img/benefits/stock-charts.png',
+            title: 'Stock Charts',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            imgSrc: 'img/benefits/stock-thresholds.png',
+            title: 'Stock Thresholds',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            imgSrc: 'img/benefits/leaderboard-page.png',
+            title: 'Leaderboard Page',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            imgSrc: 'img/benefits/sentiment-analysis.png',
+            title: 'Sentiment Analysis',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        // {
+        //     imgSrc: 'img/benefits/user-accounts.png',
+        //     title: 'User Accounts',
+        //     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        //     linkText: '',
+        //     linkLocation: '',
+        // },  
+    ]
 
-benefitsCard.forEach(benefit => {
-    // create in this line
-    let newBenefit = new SquareCardGenerator(benefit);
-    benefitsContainer.append(newBenefit.cardContainer);
-    // append in this line
-});
+    const benefitsContainer = document.querySelector('.card-container');
+
+    benefitsCard.forEach(benefit => {
+        // create in this line
+        let newBenefit = new SquareCardGenerator(benefit);
+        benefitsContainer.append(newBenefit.cardContainer);
+        // append in this line
+    });
+}
+
+if (document.title == 'About') {
+
+    const teamCard = [
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        },
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        }, 
+        {
+            imgSrc: 'img/team/team-placeholder.png',
+            title: 'Firstname Lastname',
+            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            linkText: 'Github',
+            linkLocation: 'https://www.google.com',
+        }, 
+    ]
+
+    const teamContainer = document.querySelector('.card-container');
+
+    teamCard.forEach(member => {
+        let newMember = new SquareCardGenerator(member);
+        teamContainer.append(newMember.cardContainer);
+    });
+}
