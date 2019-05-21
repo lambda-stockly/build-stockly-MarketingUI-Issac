@@ -56,3 +56,58 @@
         }
     }
 }
+
+.footer-wrapper {
+    width: 100%;
+    background-color: @secondary-color;
+}
+
+.footer-wrapper footer {
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 4.0rem 1.6rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    h1 {
+        color: @white;
+        width: 100%;
+
+        span {
+            color: @primary-color;
+        }
+    }
+
+    .footer-links {
+        width: 40%;
+        margin: 1.6rem 5%;
+    }
+
+    ul li {
+        color: @light-grey;
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        margin-bottom: 2.4rem;
+        color: @white;
+    }
+
+    @media @desktop {
+        align-items: baseline;
+
+        h1 {
+            width: 20%;
+            margin: 0;
+        }
+
+        .footer-links {
+            text-align: center;
+            width: 20%;
+            margin: 0;
+        }
+    }
+}
