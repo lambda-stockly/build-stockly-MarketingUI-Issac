@@ -206,6 +206,9 @@ a {
 }
 .nav .logo {
   margin-left: 1.6rem;
+  width: 150px;
+  position: relative;
+  z-index: 10;
 }
 .nav .logo span {
   color: #5AE5DD;
@@ -230,6 +233,9 @@ a {
 .nav .menu ul li span {
   color: #5AE5DD;
 }
+.nav .menu ul li .active-page {
+  color: #97A2B9;
+}
 .nav .menu label {
   margin-right: 2.4rem;
   font-size: 2.4rem;
@@ -240,6 +246,7 @@ a {
   display: none;
 }
 .nav .menu #toggle:checked + ul {
+  width: 100%;
   display: block;
 }
 @media (min-width: 767px) {
@@ -379,7 +386,7 @@ a {
   width: 100%;
   background-color: #FFFFFF;
 }
-.header-wrapper header {
+.header-wrapper .header-home {
   margin: 0 auto;
   padding: 4rem 1.6rem 8rem 1.6rem;
   max-width: 1280px;
@@ -388,36 +395,36 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.header-wrapper header .right-hero {
+.header-wrapper .header-home .right-hero {
   display: none;
   max-height: 475px;
   text-align: center;
 }
-.header-wrapper header .right-hero img {
+.header-wrapper .header-home .right-hero img {
   max-width: 100%;
   max-height: inherit;
 }
-.header-wrapper header .left-hero p {
+.header-wrapper .header-home .left-hero p {
   margin: 2.4rem 0;
 }
-.header-wrapper header .left-hero .stockexchange-img {
+.header-wrapper .header-home .left-hero .stockexchange-img {
   max-width: 400px;
   width: 100%;
 }
-.header-wrapper header .left-hero .stockexchange-img img {
+.header-wrapper .header-home .left-hero .stockexchange-img img {
   max-width: 100%;
 }
 @media (min-width: 767px) {
-  .header-wrapper header {
+  .header-wrapper .header-home {
     flex-direction: row;
     align-items: center;
   }
-  .header-wrapper header .left-hero {
+  .header-wrapper .header-home .left-hero {
     padding-left: 5%;
     width: 50%;
     padding-right: 5%;
   }
-  .header-wrapper header .right-hero {
+  .header-wrapper .header-home .right-hero {
     width: 50%;
     display: block;
     padding-left: 5%;
