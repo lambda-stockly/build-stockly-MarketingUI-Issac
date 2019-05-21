@@ -361,8 +361,10 @@ a {
   margin: 1.6rem 5%;
 }
 .footer-wrapper footer ul li {
-  color: #F9F9F9;
   margin-bottom: 1.2rem;
+}
+.footer-wrapper footer ul li a {
+  color: #F9F9F9;
   font-size: 1.4rem;
 }
 .footer-wrapper footer h4 {
@@ -452,6 +454,8 @@ a {
 }
 .main-wrapper main p {
   color: #F9F9F9;
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
 }
 .main-wrapper main h2 {
   margin-bottom: 2.4rem;
@@ -556,6 +560,8 @@ a {
 }
 .header-wrapper .header-about p {
   margin-bottom: 4.8rem;
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
 }
 .header-wrapper .header-about .checkmark {
   background: #5AE5DD;
@@ -569,6 +575,7 @@ a {
   left: 125px;
 }
 .header-wrapper .header-about .checkmark p.check {
+  margin: 0;
   padding-top: 0.6rem;
   color: #FFFFFF;
   font-size: 2.4rem;
