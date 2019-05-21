@@ -88,14 +88,7 @@ if (document.title == 'Σtockly') {
             imgSrc: 'img/benefits/sentiment-analysis.png',
             title: 'Sentiment Analysis',
             subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        },
-        // {
-        //     imgSrc: 'img/benefits/user-accounts.png',
-        //     title: 'User Accounts',
-        //     subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        //     linkText: '',
-        //     linkLocation: '',
-        // },  
+        }, 
     ]
 
     const benefitsContainer = document.querySelector('.card-container');

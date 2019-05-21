@@ -4,9 +4,7 @@
 }
 
 .cta-wrapper .cta-section {
-    max-width: 1280px;
-    overflow: hidden;
-    margin: 0 auto;
+    .max-desktop-width();
     padding: 4.0rem 1.6rem;
     display: flex;
     flex-direction: column;
@@ -27,33 +25,22 @@
         margin: 0.8rem 0.8rem;
         text-align: center;
 
-
         span {
             color: @white;
         }
     }
 
     .log-in {
-        padding: 1.6rem 0;
-        width: 12.0rem;
-        border-radius: 0.4rem;
-        border: 1px solid @secondary-color;
+        .log-in-button();
     }
 
     .sign-up {
-        padding: 1.6rem 0;
-        width: 12.0rem;
-        border-radius: 0.4rem;
-        background-color: @primary-color;
+        .sign-up-button();
     }
 
     @media @desktop {
         flex-direction: row;
         justify-content: space-evenly;
-
-        ul {
-            display: flex;
-        }
     }
 }
 
@@ -63,11 +50,8 @@
 }
 
 .footer-wrapper footer {
-    max-width: 1280px;
-    overflow: hidden;
-    margin: 0 auto;
+    .max-desktop-width();
     padding: 4.0rem 1.6rem;
-
     display: flex;
     flex-wrap: wrap;
 
@@ -86,9 +70,12 @@
     }
 
     ul li {
-        color: @light-grey;
         margin-bottom: 1.2rem;
-        font-size: 1.4rem;
+    }
+
+    ul li a {
+        color: @light-grey;
+        font-size: 1.2rem;
     }
 
     h4 {
