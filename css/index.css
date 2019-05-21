@@ -515,6 +515,12 @@ a {
   border-radius: 8px;
   max-width: 300px;
 }
+.benefits-wrapper .benefits-section .card a {
+  display: inline-block;
+  margin-top: 1.6rem;
+  text-decoration: underline;
+  color: #97A2B9;
+}
 .benefits-wrapper .benefits-section .card p {
   margin: 0;
 }
