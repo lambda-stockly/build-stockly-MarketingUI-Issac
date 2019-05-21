@@ -75,7 +75,7 @@ if (document.title == 'About') {
 
     workBenefitCards.forEach(workBenefit => {
         let newWorkBenefit = new HorizontalCardGenerator(workBenefit);
-        workBenefitsContainer.append(newWorkBenefit.cardContainer);
+        workBenefitsContainer.append(newWorkBenefit.linkContainer);
     });
 
 }
