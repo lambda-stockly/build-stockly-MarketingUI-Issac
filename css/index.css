@@ -199,20 +199,21 @@ a {
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10;
 }
 .nav {
   max-width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
+}
+.nav span {
+  color: #5AE5DD;
 }
 .nav .logo {
   margin-left: 1.6rem;
   width: 150px;
   position: relative;
   z-index: 10;
-}
-.nav .logo span {
-  color: #5AE5DD;
 }
 .nav .menu {
   text-align: right;
@@ -223,6 +224,9 @@ a {
 .nav .menu ul {
   display: none;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 .nav .menu ul li {
   color: #0D122B;
@@ -230,9 +234,6 @@ a {
   border-bottom: 2px solid #F9F9F9;
   text-align: center;
   display: block;
-}
-.nav .menu ul li span {
-  color: #5AE5DD;
 }
 .nav .menu ul li .active-page {
   color: #97A2B9;
@@ -264,6 +265,9 @@ a {
   }
   .nav .menu ul {
     display: inline-block;
+    -webkit-box-shadow: 0 0 0 0 #fff;
+    -moz-box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
   }
   .nav .menu ul li {
     display: inline-block;
@@ -292,8 +296,8 @@ a {
 }
 .cta-wrapper .cta-section {
   max-width: 1280px;
-  overflow: hidden;
   margin: 0 auto;
+  overflow: hidden;
   padding: 4rem 1.6rem;
   display: flex;
   flex-direction: column;
@@ -333,9 +337,6 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .cta-wrapper .cta-section ul {
-    display: flex;
-  }
 }
 .footer-wrapper {
   width: 100%;
@@ -343,8 +344,8 @@ a {
 }
 .footer-wrapper footer {
   max-width: 1280px;
-  overflow: hidden;
   margin: 0 auto;
+  overflow: hidden;
   padding: 4rem 1.6rem;
   display: flex;
   flex-wrap: wrap;
@@ -365,7 +366,7 @@ a {
 }
 .footer-wrapper footer ul li a {
   color: #F9F9F9;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .footer-wrapper footer h4 {
   margin-bottom: 2.4rem;
@@ -390,10 +391,10 @@ a {
   background-color: #FFFFFF;
 }
 .header-wrapper .header-home {
-  margin: 0 auto;
-  padding: 4rem 1.6rem 8rem 1.6rem;
   max-width: 1280px;
+  margin: 0 auto;
   overflow: hidden;
+  padding: 4rem 1.6rem 6rem 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -411,7 +412,8 @@ a {
   margin: 2.4rem 0;
 }
 .header-wrapper .header-home .left-hero .stockexchange-img {
-  max-width: 400px;
+  max-width: 500px;
+  margin: 0 auto;
   width: 100%;
 }
 .header-wrapper .header-home .left-hero .stockexchange-img img {
@@ -440,9 +442,9 @@ a {
 }
 .main-wrapper main {
   max-width: 1280px;
-  overflow: hidden;
   margin: 0 auto;
-  padding: 8rem 1.6rem;
+  overflow: hidden;
+  padding: 6rem 1.6rem;
   text-align: center;
 }
 .main-wrapper main h2,
@@ -452,16 +454,18 @@ a {
 .main-wrapper main h4 {
   cursor: pointer;
 }
-.main-wrapper main p {
-  color: #F9F9F9;
-  margin-left: 4.8rem;
-  margin-right: 4.8rem;
-}
 .main-wrapper main h2 {
   margin-bottom: 2.4rem;
 }
 .main-wrapper main p {
+  color: #F9F9F9;
   margin-bottom: 4.8rem;
+}
+@media (min-width: 767px) {
+  .main-wrapper main p {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+  }
 }
 .main-wrapper main .features li {
   display: inline-block;
@@ -483,7 +487,7 @@ a {
   display: block;
 }
 .main-wrapper main ul {
-  margin-bottom: 4.4rem;
+  margin-bottom: 4.8rem;
   border-bottom: 1px solid #F9F9F9;
   display: flex;
   justify-content: space-evenly;
@@ -500,9 +504,9 @@ a {
 }
 .card-wrapper .card-section {
   max-width: 1280px;
-  overflow: hidden;
   margin: 0 auto;
-  padding: 8rem 1.6rem;
+  overflow: hidden;
+  padding: 6rem 1.6rem;
   text-align: center;
 }
 .card-wrapper .card-section h2 {
@@ -510,8 +514,12 @@ a {
 }
 .card-wrapper .card-section p {
   margin-bottom: 4.8rem;
-  margin-left: 4.8rem;
-  margin-right: 4.8rem;
+}
+@media (min-width: 767px) {
+  .card-wrapper .card-section p {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+  }
 }
 .card-wrapper .card-section h4 {
   margin: 2.4rem 0;
@@ -546,10 +554,10 @@ a {
   max-width: inherit;
 }
 .header-wrapper .header-about {
-  margin: 0 auto;
-  padding: 4rem 1.6rem 8rem 1.6rem;
   max-width: 1280px;
+  margin: 0 auto;
   overflow: hidden;
+  padding: 4rem 1.6rem 8rem 1.6rem;
 }
 .header-wrapper .header-about h2,
 .header-wrapper .header-about p {
@@ -560,8 +568,12 @@ a {
 }
 .header-wrapper .header-about p {
   margin-bottom: 4.8rem;
-  margin-left: 4.8rem;
-  margin-right: 4.8rem;
+}
+@media (min-width: 767px) {
+  .header-wrapper .header-about p {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+  }
 }
 .header-wrapper .header-about .symbol-mark {
   background: #5AE5DD;
@@ -617,10 +629,10 @@ a {
   background-color: #0D122B;
 }
 .dark-section-wrapper .work-benefits-wrapper {
-  margin: 0 auto;
-  padding: 6rem 1.6rem;
   max-width: 1280px;
+  margin: 0 auto;
   overflow: hidden;
+  padding: 6rem 1.6rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
