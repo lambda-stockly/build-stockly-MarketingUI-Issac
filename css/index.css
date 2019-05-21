@@ -563,7 +563,7 @@ a {
   margin-left: 4.8rem;
   margin-right: 4.8rem;
 }
-.header-wrapper .header-about .checkmark {
+.header-wrapper .header-about .symbol-mark {
   background: #5AE5DD;
   min-width: 50px;
   min-height: 50px;
@@ -574,8 +574,7 @@ a {
   top: -50px;
   left: 125px;
 }
-.header-wrapper .header-about .checkmark p.check {
-  margin: 0;
+.header-wrapper .header-about .symbol-mark p.symbol {
   padding-top: 0.6rem;
   color: #FFFFFF;
   font-size: 2.4rem;
@@ -593,6 +592,9 @@ a {
   -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.header-wrapper .header-about .values-container .card p {
+  margin: 0;
 }
 .header-wrapper .header-about .values-container .value-image {
   margin: 0 auto;
@@ -614,7 +616,7 @@ a {
   width: 100%;
   background-color: #0D122B;
 }
-.dark-section-wrapper .operations-wrapper {
+.dark-section-wrapper .work-benefits-wrapper {
   margin: 0 auto;
   padding: 6rem 1.6rem;
   max-width: 1280px;
@@ -623,7 +625,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
-.dark-section-wrapper .operations-wrapper .card {
+.dark-section-wrapper .work-benefits-wrapper .card {
   background-color: #FFFFFF;
   padding: 2.4rem 1.2rem;
   margin: 2.4rem 0.8rem;
@@ -632,24 +634,24 @@ a {
   display: flex;
   align-items: center;
 }
-.dark-section-wrapper .operations-wrapper .card .operations-image {
+.dark-section-wrapper .work-benefits-wrapper .card .work-benefits-image {
   max-width: 65px;
   margin-right: 1.2rem;
 }
-.dark-section-wrapper .operations-wrapper .card .operations-image img {
+.dark-section-wrapper .work-benefits-wrapper .card .work-benefits-image img {
   max-width: 65px;
 }
-.dark-section-wrapper .operations-wrapper .card .operations-text h3 {
+.dark-section-wrapper .work-benefits-wrapper .card .work-benefits-text h3 {
   margin-bottom: 0.8rem;
 }
 @media (min-width: 767px) {
-  .dark-section-wrapper .operations-wrapper .card {
+  .dark-section-wrapper .work-benefits-wrapper .card {
     margin: 2.4rem;
   }
-  .dark-section-wrapper .operations-wrapper .card .operations-image {
+  .dark-section-wrapper .work-benefits-wrapper .card .work-benefits-image {
     margin-left: 2.4rem;
   }
-  .dark-section-wrapper .operations-wrapper .card .operations-text {
+  .dark-section-wrapper .work-benefits-wrapper .card .work-benefits-text {
     margin-left: 1.6rem;
   }
 }
