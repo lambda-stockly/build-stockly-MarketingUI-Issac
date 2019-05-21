@@ -235,7 +235,7 @@ a {
   text-align: center;
   display: block;
 }
-.nav .menu ul li .active-page {
+.nav .menu ul li.active-page {
   color: #97A2B9;
 }
 .nav .menu label {
@@ -535,6 +535,7 @@ a {
   padding: 2.4rem;
   margin: 2.4rem;
   border-radius: 8px;
+  min-width: 300px;
   max-width: 300px;
 }
 .card-wrapper .card-section .card a {
