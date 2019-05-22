@@ -80,13 +80,13 @@ if (document.title == 'About') {
             link: '#',
             imgSrc: 'img/work-benefits/life-at-stockly.png',
             title: 'Life at Σtockly →',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse."
+            paragraph: "We’re building a place where we can be happy, productive, and do meaningful work."
         },
         {
             link: '#',
             imgSrc: 'img/work-benefits/operate-globally.png',
             title: 'How We Work →',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse."
+            paragraph: "We're remote-first, spanning from Europe to the United States."
         }
     ]
 

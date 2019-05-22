@@ -28,12 +28,12 @@ loginButton.forEach(button => {
 
 function mouseOverSecButton(event) {
     let targetedButton = event.target;
-    TweenMax.to(targetedButton, 0.3, {border: '1px solid #50CDC5', color: '#97A2B9'});
+    TweenMax.to(targetedButton, 0.3, {color: '#97A2B9'});
 }
 
 function mouseOutSecButton(event) {
     let targetedButton = event.target;
-    TweenMax.to(targetedButton, 0.3, { border: '1px solid #0D122B', color: '#0D122B'});
+    TweenMax.to(targetedButton, 0.3, {color: '#0D122B'});
 
 }
 
@@ -71,4 +71,18 @@ function mouseOverFooterLink(event) {
 function mouseOutFooterLink(event) {
     let targetedLink = event.target;
     TweenMax.to(targetedLink, 0.2, { color: '#F9F9F9' });
+}
+
+// fixed scroll bar shadow
+const navBar = document.querySelector('.nav-wrapper');
+window.addEventListener('scroll', () => floatingNavBar());
+
+function floatingNavBar() {
+    if(navBar.classList.contains('floatingNav') && window.scrollY > 10){
+        // do nothing
+    } else if(window.scrollY > 10) {
+        navBar.classList.add('floatingNav');
+    } else {
+        navBar.classList.remove('floatingNav');
+    }
 }

@@ -201,10 +201,20 @@ a {
   top: 0;
   z-index: 10;
 }
+.floatingNav {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 .nav {
   max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 0.8rem;
 }
 .nav span {
   color: #5AE5DD;
@@ -260,6 +270,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
   }
   .nav .menu {
     position: relative;
@@ -354,11 +366,21 @@ a {
   width: 100%;
   background-color: #0D122B;
 }
+.footer-wrapper p {
+  padding: 2rem 0;
+  text-align: center;
+  color: lightgrey;
+  font-size: 1rem;
+}
+.footer-wrapper a {
+  color: lightgrey;
+  font-size: 1rem;
+}
 .footer-wrapper footer {
   max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 4rem 1.6rem;
+  padding: 4rem 1.6rem 0 1.6rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -393,6 +415,8 @@ a {
 @media (min-width: 767px) {
   .footer-wrapper footer {
     align-items: baseline;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
   }
   .footer-wrapper footer h1 {
     width: 20%;
@@ -420,7 +444,13 @@ a {
   color: #FFFFFF;
 }
 .carousel-wrapper main h4 {
+  font-size: 1.2rem;
   cursor: pointer;
+}
+@media (min-width: 767px) {
+  .carousel-wrapper main h4 {
+    font-size: 1.6rem;
+  }
 }
 .carousel-wrapper main h2 {
   margin-bottom: 2.4rem;
