@@ -221,6 +221,10 @@ a {
   top: 0.8rem;
   width: 100%;
 }
+.nav .menu .sign-up,
+.nav .menu .log-in {
+  display: none;
+}
 .nav .menu ul {
   display: none;
   background-color: #FFFFFF;
@@ -277,13 +281,20 @@ a {
   .nav .menu ul li span {
     color: #FFFFFF;
   }
+  .nav .menu .log-in-mobile,
+  .nav .menu .sign-up-mobile {
+    display: none;
+  }
   .nav .menu .log-in {
+    display: inline-block;
     padding: 1.6rem 0;
     width: 12rem;
     border-radius: 0.4rem;
     border: 1px solid #0D122B;
+    background-color: #FFFFFF;
   }
   .nav .menu .sign-up {
+    display: inline-block;
     padding: 1.6rem 0;
     width: 12rem;
     border-radius: 0.4rem;
@@ -325,6 +336,7 @@ a {
   width: 12rem;
   border-radius: 0.4rem;
   border: 1px solid #0D122B;
+  background-color: #FFFFFF;
 }
 .cta-wrapper .cta-section .sign-up {
   padding: 1.6rem 0;

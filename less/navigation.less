@@ -20,6 +20,10 @@
         top: 0.8rem;
         width: 100%;
 
+        .sign-up, .log-in {
+            display: none;
+        }
+
         ul {
             display: none;
             background-color: @white;
@@ -88,11 +92,17 @@
 
             }
 
+            .log-in-mobile, .sign-up-mobile {
+                display: none;
+            }
+
             .log-in {
+                display: inline-block;
                 .log-in-button();
             }
 
             .sign-up {
+                display: inline-block;
                 .sign-up-button();  
             }
         }
