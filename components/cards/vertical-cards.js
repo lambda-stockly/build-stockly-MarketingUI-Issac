@@ -79,7 +79,7 @@ if (document.title == 'About') {
         },
     ]
 
-    const valuesContainer = document.querySelector('.values-container');
+    const valuesContainer = document.querySelector('#values-container');
 
     valueCards.forEach(value => {
         let newValue = new VerticalCardGenerator(value);

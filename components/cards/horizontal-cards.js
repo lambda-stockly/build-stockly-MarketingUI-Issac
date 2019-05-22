@@ -71,7 +71,7 @@ if (document.title == 'About') {
         }
     ]
 
-    const workBenefitsContainer = document.querySelector('.work-benefits-wrapper');
+    const workBenefitsContainer = document.querySelector('#work-benefits-wrapper');
 
     workBenefitCards.forEach(workBenefit => {
         let newWorkBenefit = new HorizontalCardGenerator(workBenefit);
