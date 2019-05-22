@@ -368,6 +368,12 @@ a {
   color: #F9F9F9;
   font-size: 1.2rem;
 }
+.footer-wrapper footer ul li a img {
+  margin-right: 0.8rem;
+  vertical-align: text-bottom;
+  max-width: 1.6rem;
+  max-height: 1.6rem;
+}
 .footer-wrapper footer h4 {
   margin-bottom: 2.4rem;
   color: #FFFFFF;
@@ -472,7 +478,7 @@ a {
   }
 }
 .card-wrapper .card-section h4 {
-  margin: 2.4rem 0;
+  margin: 1.2rem 0;
 }
 .card-wrapper .card-section .card-container {
   display: flex;
@@ -499,7 +505,7 @@ a {
 }
 .card-wrapper .card-section .card .image-container {
   margin: 0 auto;
-  max-width: 65px;
+  max-width: 95px;
 }
 .card-wrapper .card-section .card .image-container img {
   max-width: inherit;
