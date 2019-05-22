@@ -8,6 +8,8 @@ class Carousel {
             tab.addEventListener('click', (event) => {
                 this.selectTab();
             });
+            tab.addEventListener('mouseenter', (event) => this.mouseOverFeatureLink(event));
+            tab.addEventListener('mouseleave', (event) => this.mouseOutFeatureLink(event));
         });
     }
 
@@ -29,6 +31,16 @@ class Carousel {
                 image.classList.add('active-photo');
             }
         });
+    }
+
+    mouseOverFeatureLink(event) {
+        let targetedLink = event.target;
+        TweenMax.to(targetedLink, 0.3, { color: '#5AE5DD' });
+    }
+    
+    mouseOutFeatureLink(event) {
+        let targetedLink = event.target;
+        TweenMax.to(targetedLink, 0.2, { color: '#F9F9F9' });
     }
 }
 
