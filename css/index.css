@@ -514,6 +514,7 @@ a {
 }
 .card-wrapper .card-section .card p {
   margin: 0;
+  font-size: 1.4rem;
 }
 .card-wrapper .card-section .card .image-container {
   margin: 0 auto;
@@ -634,6 +635,12 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+#work-benefits-wrapper .hoverCard {
+  transition: box-shadow 0.3s;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 #work-benefits-wrapper .card {
   background-color: #FFFFFF;

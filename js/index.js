@@ -28,13 +28,31 @@ loginButton.forEach(button => {
 
 function mouseOverSecButton(event) {
     let targetedButton = event.target;
-    TweenMax.to(targetedButton, 0.3, {border: '1px solid #50CDC5'});
+    TweenMax.to(targetedButton, 0.3, {border: '1px solid #50CDC5', color: '#97A2B9'});
 }
 
 function mouseOutSecButton(event) {
     let targetedButton = event.target;
-    TweenMax.to(targetedButton, 0.3, { border: '1px solid #0D122B'});
+    TweenMax.to(targetedButton, 0.3, { border: '1px solid #0D122B', color: '#0D122B'});
 
+}
+
+// nav link hover effect
+const navLinks = document.querySelectorAll('.hover-nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('mouseenter', (event) => mouseOverNavLink(event));
+    link.addEventListener('mouseleave', (event) => mouseOutNavLink(event));
+})
+
+function mouseOverNavLink(event) {
+    let targetedLink = event.target;
+    TweenMax.to(targetedLink, 0.3, { color: '#97A2B9' });
+}
+
+function mouseOutNavLink(event) {
+    let targetedLink = event.target;
+    TweenMax.to(targetedLink, 0.3, { color: '#0D122B' });
 }
 
 // footer list item hover effect

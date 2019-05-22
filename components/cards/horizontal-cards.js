@@ -12,8 +12,14 @@ class HorizontalCardGenerator {
         this.linkContainer = document.createElement('a');
         this.linkContainer.href = this.link;
 
+        
+
         this.cardContainer = document.createElement('div');
         this.cardContainer.classList.add('card');
+
+        this.cardContainer.addEventListener('mouseenter', (event) => this.mouseOverCard(event));
+        this.cardContainer.addEventListener('mouseleave', (event) => this.mouseOutCard(event));
+
         this.linkContainer.append(this.cardContainer);
 
         this.constructImage();
@@ -53,6 +59,19 @@ class HorizontalCardGenerator {
         paragraph.textContent = this.paragraph;
         this.textContainer.append(paragraph);
     }
+
+    mouseOverCard(event) {
+        let targetedCard = event.target;
+        TweenMax.to(targetedCard, 0.3, {position: 'relative', top: '-3px', 
+        boxShadow: '0 7px 4px -4px #777', mozBoxShadow: '0 7px 4px -4px #777', webkitBoxShadow: '0 7px 4px -4px #777'});
+    }
+
+    mouseOutCard(event) {
+        let targetedCard = event.target;
+        TweenMax.to(targetedCard, 0.3, {top: '3px', boxShadow: 'none;', mozBoxShadow: 'none', webkitBoxShadow: 'none'});
+        TweenMax.to(targetedCard, {delay: 0.3, position: 'static'});
+
+    }
 }
 
 if (document.title == 'About') {
@@ -77,5 +96,5 @@ if (document.title == 'About') {
         let newWorkBenefit = new HorizontalCardGenerator(workBenefit);
         workBenefitsContainer.append(newWorkBenefit.linkContainer);
     });
-
 }
+
