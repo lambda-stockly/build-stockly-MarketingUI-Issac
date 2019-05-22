@@ -202,9 +202,9 @@ a {
   z-index: 10;
 }
 .floatingNav {
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
+  -webkit-box-shadow: 0 10px 6px -6px #d4d4d4;
+  -moz-box-shadow: 0 10px 6px -6px #d4d4d4;
+  box-shadow: 0 10px 6px -6px #d4d4d4;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -238,9 +238,9 @@ a {
 .nav .menu ul {
   display: none;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
+  -webkit-box-shadow: 0 10px 6px -6px #d4d4d4;
+  -moz-box-shadow: 0 10px 6px -6px #d4d4d4;
+  box-shadow: 0 10px 6px -6px #d4d4d4;
 }
 .nav .menu ul li {
   color: #0D122B;
