@@ -62,32 +62,32 @@ if (document.title == 'Σtockly') {
         {
             imgSrc: 'img/benefits/user-accounts.png',
             title: 'User Accounts',
-            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            subTitle: 'Register your account in a matter of seconds',
         },
         {
             imgSrc: 'img/benefits/stock_summaries.png',
             title: 'Stock Summaries',
-            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            subTitle: 'Actionable summaries of your favorite stocks',
         },
         {
             imgSrc: 'img/benefits/stock-charts.png',
             title: 'Stock Charts',
-            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            subTitle: 'See stock trajectory projections at a glance.',
         },
         {
             imgSrc: 'img/benefits/stock-thresholds.png',
             title: 'Stock Thresholds',
-            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            subTitle: 'Make key decisions when stocks reach certain thresholds',
         },
         {
             imgSrc: 'img/benefits/leaderboard-page.png',
             title: 'Leaderboard Page',
-            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            subTitle: 'Rank your stocks by preference and performance',
         },
         {
             imgSrc: 'img/benefits/sentiment-analysis.png',
             title: 'Sentiment Analysis',
-            subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            subTitle: 'Use our sentiment tool to predict stock prices',
         }, 
     ]
 

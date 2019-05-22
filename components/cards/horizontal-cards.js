@@ -12,8 +12,14 @@ class HorizontalCardGenerator {
         this.linkContainer = document.createElement('a');
         this.linkContainer.href = this.link;
 
+        
+
         this.cardContainer = document.createElement('div');
         this.cardContainer.classList.add('card');
+
+        this.cardContainer.addEventListener('mouseenter', (event) => this.mouseOverCard(event));
+        this.cardContainer.addEventListener('mouseleave', (event) => this.mouseOutCard(event));
+
         this.linkContainer.append(this.cardContainer);
 
         this.constructImage();
@@ -53,6 +59,19 @@ class HorizontalCardGenerator {
         paragraph.textContent = this.paragraph;
         this.textContainer.append(paragraph);
     }
+
+    mouseOverCard(event) {
+        let targetedCard = event.target;
+        TweenMax.to(targetedCard, 0.3, {position: 'relative', top: '-3px', 
+        boxShadow: '0 7px 4px -4px #777', mozBoxShadow: '0 7px 4px -4px #777', webkitBoxShadow: '0 7px 4px -4px #777'});
+    }
+
+    mouseOutCard(event) {
+        let targetedCard = event.target;
+        TweenMax.to(targetedCard, 0.3, {top: '3px', boxShadow: 'none;', mozBoxShadow: 'none', webkitBoxShadow: 'none'});
+        TweenMax.to(targetedCard, {delay: 0.3, position: 'static'});
+
+    }
 }
 
 if (document.title == 'About') {
@@ -61,21 +80,21 @@ if (document.title == 'About') {
             link: '#',
             imgSrc: 'img/work-benefits/life-at-stockly.png',
             title: 'Life at Σtockly →',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse."
+            paragraph: "We’re building a place where we can be happy, productive, and do meaningful work."
         },
         {
             link: '#',
             imgSrc: 'img/work-benefits/operate-globally.png',
             title: 'How We Work →',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse."
+            paragraph: "We're remote-first, spanning from Europe to the United States."
         }
     ]
 
-    const workBenefitsContainer = document.querySelector('.work-benefits-wrapper');
+    const workBenefitsContainer = document.querySelector('#work-benefits-wrapper');
 
     workBenefitCards.forEach(workBenefit => {
         let newWorkBenefit = new HorizontalCardGenerator(workBenefit);
         workBenefitsContainer.append(newWorkBenefit.linkContainer);
     });
-
 }
+

@@ -1,7 +1,20 @@
 .sticky-header();
 
+.floatingNav {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+             box-shadow: 0 10px 6px -6px #777;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    
+  }
+
 .nav {
     .max-desktop-width();
+    padding-bottom: 0.8rem;
 
     span {
         color: @primary-color;
@@ -19,6 +32,10 @@
         position: absolute;
         top: 0.8rem;
         width: 100%;
+
+        .sign-up, .log-in {
+            display: none;
+        }
 
         ul {
             display: none;
@@ -62,6 +79,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
 
         .menu {
             position: relative;
@@ -88,11 +107,17 @@
 
             }
 
+            .log-in-mobile, .sign-up-mobile {
+                display: none;
+            }
+
             .log-in {
+                display: inline-block;
                 .log-in-button();
             }
 
             .sign-up {
+                display: inline-block;
                 .sign-up-button();  
             }
         }

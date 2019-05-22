@@ -63,23 +63,23 @@ if (document.title == 'About') {
             symbol: '✔',
             imgSrc: 'img/values/solutions-focused.png',
             title: 'Solutions-Focused',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla dui ut lobortis fringilla.Lorem ipsum dolor sit amet."
+            paragraph: "We don't dwell on problems; we strive to find solutions. We believe that the many issues surrounding stock trading can be fixed."
         },
         {
             symbol: '✔',
             imgSrc: 'img/values/dedicated-mission.png',
             title: 'Dedicated Mission',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla dui ut lobortis fringilla.Lorem ipsum dolor sit amet."
+            paragraph: "We provide the tools, know-how and support to move fast, be pioneering, and not break things."
         },
         {
             symbol: '✔',
             imgSrc: 'img/values/privacy-first.png',
             title: 'Privacy First',
-            paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla dui ut lobortis fringilla.Lorem ipsum dolor sit amet."
+            paragraph: "Σtockly was built on these principles from the ground up. We exercise complete transparency and privacy with your data."
         },
     ]
 
-    const valuesContainer = document.querySelector('.values-container');
+    const valuesContainer = document.querySelector('#values-container');
 
     valueCards.forEach(value => {
         let newValue = new VerticalCardGenerator(value);
