@@ -5,7 +5,7 @@ class Carousel {
         this.images = images;
 
         this.tabs.forEach(tab => {
-            tab.addEventListener('click', (event) => {
+            tab.addEventListener('click', () => {
                 this.selectTab();
             });
             tab.addEventListener('mouseenter', (event) => this.mouseOverFeatureLink(event));
