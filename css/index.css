@@ -255,8 +255,37 @@ a {
 .nav .menu label {
   margin-right: 2.4rem;
   font-size: 2.4rem;
-  color: #0D122B;
   cursor: pointer;
+}
+.nav .menu label > :last-child {
+  opacity: 0;
+}
+.nav .menu .line {
+  right: 2.4rem;
+  position: absolute;
+  height: 0.2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  background: #0D122B;
+  transition: all ease 0.25s;
+}
+.nav .menu .close .line1 {
+  transform: rotate(45deg);
+  top: 1.8rem;
+}
+.nav .menu .close .line2,
+.nav .menu .close .line3 {
+  transform: rotate(-45deg);
+  top: 1.8rem;
+}
+.nav .menu .line1 {
+  top: 1.2rem;
+}
+.nav .menu .line2 {
+  top: 1.8rem;
+}
+.nav .menu .line3 {
+  top: 2.4rem;
 }
 .nav .menu #toggle {
   display: none;
