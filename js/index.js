@@ -37,6 +37,13 @@ function mouseOutSecButton(event) {
 
 }
 
+// hamburger button animation
+const hamburgerMenu = document.querySelector('.menu label');
+
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('close');
+});
+
 // nav link hover effect
 const navLinks = document.querySelectorAll('.hover-nav-link');
 
