@@ -29,6 +29,7 @@ class Carousel {
             image.classList.remove('active-photo');
             if(image.dataset.tab == tabIdentifier){
                 image.classList.add('active-photo');
+                TweenMax.from(image, 2, { opacity: '0' });
             }
         });
     }
