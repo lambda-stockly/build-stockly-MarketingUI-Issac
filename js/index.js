@@ -119,5 +119,8 @@ if (document.title == 'Approach') {
     
     TweenMax.from(approachHeader, 2, {opacity: 0});
     TweenMax.from(approachSubtitle, 2, {opacity: 0});
-    TweenMax.from(approachImage, 2, {opacity: 0});    
+    TweenMax.from(approachImage, 2, {opacity: 0}); 
+
 }
+
+

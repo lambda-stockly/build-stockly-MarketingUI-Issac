@@ -736,6 +736,7 @@ a {
     margin: 2.4rem;
   }
   #work-benefits-wrapper .card .work-benefits-image {
+    left: -10px;
     margin-left: 2.4rem;
   }
   #work-benefits-wrapper .card .work-benefits-text {

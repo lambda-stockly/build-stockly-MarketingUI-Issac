@@ -13,8 +13,6 @@ class HorizontalCardGenerator {
         this.linkContainer = document.createElement('a');
         this.linkContainer.href = this.link;
 
-        
-
         this.cardContainer = document.createElement('div');
         this.cardContainer.classList.add('card');
 
