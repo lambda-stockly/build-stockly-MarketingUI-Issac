@@ -350,7 +350,7 @@ a {
   max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 4rem 1.6rem;
+  padding: 4rem 1.6rem 1.6rem 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -515,7 +515,8 @@ a {
 }
 .carousel-wrapper main ul {
   margin-bottom: 4.8rem;
-  border-bottom: 1px solid #F9F9F9;
+  border-bottom: 2px solid #d4d4d4;
+  border-radius: 0.2rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -523,7 +524,13 @@ a {
   padding-bottom: 1.6rem;
 }
 .carousel-wrapper main ul .active-link {
-  border-bottom: 4px solid #5AE5DD;
+  border-bottom: 0.4rem solid #5AE5DD;
+}
+@media (min-width: 767px) {
+  .carousel-wrapper main ul {
+    margin-right: 4.8rem;
+    margin-left: 4.8rem;
+  }
 }
 .card-wrapper {
   width: 100%;
@@ -573,7 +580,7 @@ a {
 }
 .card-wrapper .card-section .card p {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .card-wrapper .card-section .card .image-container {
   margin: 0 auto;
@@ -756,4 +763,70 @@ a {
 .dark-section-wrapper {
   width: 100%;
   background-color: #0D122B;
+}
+.approach section {
+  width: 100vw;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+}
+.approach section div {
+  height: 100vh;
+  z-index: -1;
+}
+.header-approach {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 4rem 1.6rem 6rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-approach .approach-image-container {
+  margin-bottom: 2.4rem;
+  max-width: 90%;
+  max-height: 400px;
+}
+@media (min-width: 767px) {
+  .header-approach .approach-image-container {
+    max-width: 80%;
+  }
+}
+.header-approach .approach-image-container img {
+  max-width: inherit;
+}
+.header-approach p {
+  margin: 2.4rem 0;
+}
+.header-approach .stockly-approach {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 0.2rem;
+  padding: 2.4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.header-approach .stockly-approach h3 {
+  width: 100%;
+}
+.header-approach .stockly-approach h4 {
+  font-size: 3rem;
+}
+.header-approach .stockly-approach p {
+  font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+.header-approach .stockly-approach .image-container {
+  margin: 0.8rem auto;
+  max-width: 64px;
+}
+.header-approach .stockly-approach .image-container img {
+  max-width: inherit;
+}
+.header-approach .stockly-approach .numbered-approach {
+  max-width: 300px;
 }

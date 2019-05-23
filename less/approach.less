@@ -1,0 +1,79 @@
+.approach {
+    section {
+        width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+
+        div {
+            height: 100vh;
+            z-index: -1;
+        }
+    }
+}
+
+.header-approach {
+    .max-desktop-width();
+    padding: 4.0rem 1.6rem 6.0rem 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .approach-image-container {
+        margin-bottom: 2.4rem;
+        max-width: 90%;
+        max-height: 400px;
+
+        @media @desktop {
+            max-width: 80%;
+        }
+
+        img {
+            max-width: inherit;
+        }
+    }
+
+    p {
+        margin: 2.4rem 0;
+    }
+
+    .stockly-approach {
+        background-color: @white;
+        width: 100%;
+        border-radius: 0.2rem;
+        padding: 2.4rem 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        h3 {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 3.0rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin: 0.8rem 0;
+        }
+
+        .image-container {
+            margin: 0.8rem auto;
+            max-width: 64px;
+
+            img {
+                max-width: inherit;
+            }
+        }
+
+        .numbered-approach {
+            max-width: 300px;
+        }
+    }
+}

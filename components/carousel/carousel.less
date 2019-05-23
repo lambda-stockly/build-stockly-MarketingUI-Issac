@@ -62,7 +62,8 @@
 
         ul {
             margin-bottom: 4.8rem;
-            border-bottom: 1px solid @light-grey;
+            border-bottom: 2px solid #d4d4d4;
+            border-radius: 0.2rem;
             display: flex;
             justify-content: space-evenly;
 
@@ -71,7 +72,13 @@
             }
 
             .active-link {
-                border-bottom: 4px solid @primary-color;
+                border-bottom: 0.4rem solid @primary-color;
+            }
+
+            @media @desktop {
+                
+                margin-right: 4.8rem;
+                margin-left: 4.8rem;
             }
         }
     }

@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
-    <title>About</title>
+    <title>Approach</title>
+    <script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+    <script defer="defer" src="js/index.js"></script>
+    <script defer="defer" src="js/approach.js"></script>
+
 
 </head>
 
 <body>
-    <script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script defer="defer" src="components/cards/vertical-cards.js"></script>
-    <script defer="defer" src="components/cards/horizontal-cards.js"></script>
-    <script defer="defer" src="components/cards/square-cards.js"></script>
-    <script defer="defer" src="js/index.js"></script>
-
     <!-- Start of Nav -->
     <div class='nav-wrapper'>
         <nav class='nav'>
@@ -37,14 +37,14 @@
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                     <span>&#9776;</span>
-                </label> 
+                </label>
                 <input type="checkbox" id="toggle">
                 <ul>
                     <a href="about.html">
-                        <li class='active-page'>About Us</li>
+                        <li class='hover-nav-link'>About Us</li>
                     </a>
                     <a href="approach.html">
-                        <li class='hover-nav-link'>Our Approach</li>
+                        <li class='active-page'>Our Approach</li>
                     </a>
                     <a href="https://stockly-fe.netlify.com">
                         <li class='log-in'>Log in</li>
@@ -65,42 +65,54 @@
     <!-- End of Nav -->
 
     <!-- Start of Header -->
-    <div class="header-wrapper">
-        <header class='header-about'>
-            <h2>The Main Headling</h2>
+    <div class="approach">
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <header class='header-approach'>
+            <h2>Invest in Sentiment</h2>
             <p>We provide traders with the power to understand their markets and make smarter decisions.</p>
-            <div id="values-container">
-
-                <!-- Insert Using JavaScript vertical-cards.js-->
-
+            <div class='approach-image-container'>
+                    <img src="img/stockly-approach/world-map.png" alt="World Map">
+                </div>
+            <div class='stockly-approach'>
+                <h3>The Stockly Approach</h3>
+                <div class='numbered-approach'>
+                    <h4>1</h4>
+                    <div class='image-container'>
+                        <img src="img/stockly-approach/save.png" alt="">
+                    </div>
+                    <p>Build your own mix of publicly-traded, impact companies across Stockly's offerings.</p>
+                </div>
+                <div class='numbered-approach'>
+                    <h4>2</h4>
+                    <div class='image-container'>
+                        <img src="img/stockly-approach/money.png" alt="">
+                    </div>
+                    <p>Monitor your investments’ progress on our easy-to-use online platform.</p>
+                </div>
+                <div class='numbered-approach'>
+                    <h4>3</h4>
+                    <div class='image-container'>
+                        <img src="img/stockly-approach/charts.png" alt="">
+                    </div>
+                    <p>Watch as Stockly helps you save for retirement, college, or your new house.</p>
+                </div>
             </div>
         </header>
     </div>
     <!-- End of Header -->
-
-    <!-- Work Benefits Section Wrapper -->
-    <div class="dark-section-wrapper">
-        <section id='work-benefits-wrapper'>
-
-            <!-- Insert Using JavaScript horizontal-cards.js-->
-
-        </section>
-    </div>
-
-    <!-- Start of Team Section -->
-    <div class='card-wrapper'>
-        <section class="card-section">
-            <h2>Meet The Team</h2>
-            <p>Our customers entrust us with the enormous responsibility of helping to run their livelihoods. We work
-                tirelessly to be worthy of that trust.</p>
-            <div class='card-container'>
-
-                <!-- Insert Using JavaScript square-cards.js-->
-
-            </div>
-        </section>
-    </div>
-    <!-- End of Team Section -->
 
     <!-- Start of Footer CTA Section -->
     <div class="cta-wrapper">
