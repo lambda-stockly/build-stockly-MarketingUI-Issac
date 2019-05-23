@@ -1,3 +1,9 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+    .then(function() {
+        console.log('SW registered')
+    });
+}
 
 // Sign up button animation
 const signUpButton = document.querySelectorAll('.sign-up');
@@ -120,7 +126,6 @@ if (document.title == 'Approach') {
     TweenMax.from(approachHeader, 2, {opacity: 0});
     TweenMax.from(approachSubtitle, 2, {opacity: 0});
     TweenMax.from(approachImage, 2, {opacity: 0}); 
-
 }
 
 
