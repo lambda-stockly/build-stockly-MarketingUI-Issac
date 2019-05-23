@@ -767,11 +767,11 @@ a {
 .approach section {
   width: 100vw;
   position: absolute;
-  display: grid;
-  grid-template-columns: repeat(10, auto);
+  display: flex;
+  flex-direction: column;
 }
 .approach section div {
-  height: 100vh;
+  height: 20vh;
   z-index: -1;
 }
 .header-approach {
@@ -812,6 +812,7 @@ a {
 }
 .header-approach .stockly-approach h3 {
   width: 100%;
+  margin-bottom: 1.6rem;
 }
 .header-approach .stockly-approach h4 {
   font-size: 3rem;

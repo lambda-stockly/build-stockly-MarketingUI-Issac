@@ -6,7 +6,7 @@ let t1 = anime.timeline({
 t1.add({
     targets: '.approach section div',
     backgroundColor: '#E0FCF9',
-    delay: anime.stagger(100)
+    delay: anime.stagger(75)
 })
 
 const stocklyApproach = document.querySelector('.stockly-approach');
