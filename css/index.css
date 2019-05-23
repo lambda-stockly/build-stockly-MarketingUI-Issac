@@ -776,7 +776,7 @@ a {
   flex-direction: column;
 }
 .approach section div {
-  height: 20vh;
+  height: 12vh;
   z-index: -1;
 }
 .header-approach {
