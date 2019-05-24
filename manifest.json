@@ -1,11 +1,11 @@
 {
-    "name": "Stockly, Sentiment Analysis to Predict Stock Prices",
-    "short_name": "Basic PWA",
+    "name": "Stockly, Using Sentiment to Predict Stock Prices",
+    "short_name": "Stockly",
     "start_url": ".",
     "display": "standalone",
     "orientation": "portrait",
-    "background_color": "#5AE5DD",
-    "theme_color": "#0D122B",
+    "background_color": "#fff",
+    "theme_color": "#5AE5DD",
     "icons": [
         {
             "src": "/img/icons/icon96.png",

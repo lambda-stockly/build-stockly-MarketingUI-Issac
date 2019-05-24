@@ -1,3 +1,4 @@
+
 .approach {
     section {
         width: 100vw;
@@ -23,16 +24,26 @@
     text-align: center;
 
     .approach-image-container {
-        margin-bottom: 2.4rem;
-        max-width: 90%;
-        max-height: 400px;
 
         @media @desktop {
             max-width: 80%;
         }
 
-        img {
-            max-width: inherit;
+        svg {
+            display: block;
+            margin: -1.6rem 0;
+            max-width: 80vw;
+            max-height: 200px;
+
+            @media (min-width:550px) {
+                margin: 0;
+                max-height: 250px;
+            }
+
+            @media @desktop {
+                margin: 1.6rem 0;
+                max-height: 350px;
+            }
         }
     }
 
