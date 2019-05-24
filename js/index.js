@@ -1,7 +1,7 @@
+
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
     .then(function() {
-        console.log('SW registered')
     });
 }
 
@@ -100,8 +100,24 @@ function floatingNavBar() {
     }
 }
 
+
 // approach page
 if (document.title == 'Approach') {
+    // target nodes on svg
+    const svgPaths = document.querySelectorAll('.approach-image-container path');
+
+    let node1 = svgPaths[26];
+    let node2 = svgPaths[27];
+    let node3 = svgPaths[28];
+    let node4 = svgPaths[29];
+    let node5 = svgPaths[30];
+
+    TweenMax.fromTo(node1, 1, {fill: '#5AE5DD', delay: 1.5}, {fill: '#dcf9f8', repeat: -1});
+    TweenMax.fromTo(node2, 1, {fill: '#5AE5DD', delay: 1.2}, {fill: '#00d8cd', repeat: -1});
+    TweenMax.fromTo(node3, 2, {fill: '#5AE5DD', delay: 0.9}, {fill: '#00bfaf', repeat: -1});
+    TweenMax.fromTo(node4, 2, {fill: '#5AE5DD', delay: 0.6}, {fill: '#009e8d', repeat: -1});
+    TweenMax.fromTo(node5, 3, {fill: '#5AE5DD', delay: 0.3}, {fill: '#00705c', repeat: -1});
+
     let t1 = anime.timeline({
         easing: 'easeOutExpo',
         duration: 750
@@ -126,6 +142,8 @@ if (document.title == 'Approach') {
     TweenMax.from(approachHeader, 2, {opacity: 0});
     TweenMax.from(approachSubtitle, 2, {opacity: 0});
     TweenMax.from(approachImage, 2, {opacity: 0}); 
+
+    
 }
 
 
