@@ -168,7 +168,7 @@ if (document.title == 'About') {
             linkLocation: 'https://github.com/Ruwai',
         },
         {
-            imgSrc: 'img/team/team-placeholder.png',
+            imgSrc: 'img/team/derek-shing.png',
             title: 'Derek Shing',
             subTitle: 'Data Scientist',
             linkText: 'Github',
