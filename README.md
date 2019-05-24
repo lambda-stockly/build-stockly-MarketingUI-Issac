@@ -10,7 +10,7 @@ My primary role on the project as a User Interface Developer was to build a mult
 
 Given that we had no UX Designer, I designed the moodboards for the team and got agreement on the preferred style off the app. From that point, I designed mock-ups using Figma to guide the development of the website while providing the team with assets. 
 
-The marketing website has been built using HTML, LESS, and JavaScript. It has been completed from a mobile-first perspective, consequently having breakpoints that align with desktop widths. The main call to action redirects the user to the front-end of the application which then receives data from the backend.
+The marketing website has been built using HTML, LESS, and JavaScript. It has been completed from a mobile-first perspective, consequently having breakpoints that align with desktop widths. The main call to action redirects the user to the front-end of the application which then receives data from the backend. The website also has PWA functionality, allowing users to download it directly to their mobile phones.
 
 ## Getting Started
 

@@ -1,7 +1,7 @@
 {
-  "name": "Stockly",
+  "name": "stockly",
   "version": "1.0.0",
-  "description": "A multi-page marketing website with pwa functionality",
+  "description": "A multi-page marketing website with PWA functionality",
   "main": "index.js",
   "scripts": {
     "start": "http-server -c-1 -p 8081"
