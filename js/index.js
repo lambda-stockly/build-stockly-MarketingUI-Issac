@@ -1,4 +1,4 @@
-
+// check that service worker allowable from browser
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
     .then(function() {
@@ -103,7 +103,7 @@ function floatingNavBar() {
 
 // approach page
 if (document.title == 'Approach') {
-    // target nodes on svg
+    // target nodes on specific svg image
     const svgPaths = document.querySelectorAll('.approach-image-container path');
 
     let node1 = svgPaths[26];
@@ -118,6 +118,7 @@ if (document.title == 'Approach') {
     TweenMax.fromTo(node4, 2, {fill: '#5AE5DD', delay: 0.6}, {fill: '#009e8d', repeat: -1});
     TweenMax.fromTo(node5, 3, {fill: '#5AE5DD', delay: 0.3}, {fill: '#00705c', repeat: -1});
 
+    // trickle down animation effect on approach page load
     let t1 = anime.timeline({
         easing: 'easeOutExpo',
         duration: 750
@@ -129,6 +130,7 @@ if (document.title == 'Approach') {
         delay: anime.stagger(75)
     })
     
+    // fade in effect for various components on the approach page
     const stocklyApproach = document.querySelector('.stockly-approach');
     TweenMax.from(stocklyApproach, 2, {opacity: 0});
     

@@ -1,5 +1,4 @@
-
-
+// Service Worker for PWA cache functionality
 self.addEventListener('install', function(event) {
     event.waitUntil(caches.open('static')
     .then(function(cache) {
