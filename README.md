@@ -16,6 +16,10 @@ The marketing website has been built using HTML, LESS, and JavaScript. It has be
 
 This project has been completed using html, less, and javaScript. To run locally, simply fork this project and execute the index.html file. If you wish to make changes via less, you'll need to install it locally on your machine or import it via a script.
 
+## Video Walkthrough
+
+https://youtu.be/PYmzTnBylVY
+
 ## Deployment
 
 Stockly live deployment: https://getstockly.netlify.com/ 
